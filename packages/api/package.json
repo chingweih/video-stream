@@ -4,6 +4,8 @@
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
+    "@video-stream/shared": "workspace:*",
+    "bullmq": "^5.67.2",
     "hono": "^4.11.7"
   },
   "devDependencies": {
