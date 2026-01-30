@@ -1,13 +1,3 @@
-To install dependencies:
+# @video-stream/api
 
-```sh
-bun install
-```
-
-To run:
-
-```sh
-bun run dev
-```
-
-open http://localhost:3000
+This is a Hono api that handles video uploads.
