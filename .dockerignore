@@ -1,0 +1,14 @@
+**/Dockerfile
+
+# deps
+**/node_modules
+
+# sqlite
+**/*.db
+
+# outputs
+**/dist/
+**/out/
+
+# dotenv
+**/.env
