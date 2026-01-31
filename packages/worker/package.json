@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build ./src/index.ts --compile --outfile out/server && rm -f .*.bun-build"
   },
   "devDependencies": {
     "@types/bun": "latest"
