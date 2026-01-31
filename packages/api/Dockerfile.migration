@@ -1,0 +1,8 @@
+FROM oven/bun:1-alpine
+WORKDIR /app
+
+COPY . .
+
+WORKDIR /app/packages/api
+
+CMD ["bun", "run", "db:migrate"]

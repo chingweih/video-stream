@@ -29,8 +29,6 @@ const worker = new Worker<
         '0',
         '-f',
         'hls',
-        '-c:v',
-        'h264_videotoolbox',
         'output/master.m3u8',
       ],
       cwd: dir,

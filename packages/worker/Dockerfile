@@ -17,6 +17,8 @@ RUN cd packages/worker && bun run build
 FROM base AS runner
 WORKDIR /app
 
+RUN apk update && apk add --no-cache ffmpeg
+
 COPY --from=builder /app/packages/worker/out/server server
 
 ENV NODE_ENV=production

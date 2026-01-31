@@ -9,7 +9,7 @@ import { v7 as uuid } from 'uuid'
 import { s3 } from 'bun'
 import { zValidator } from '@hono/zod-validator'
 import { z } from 'zod/v4'
-import { db } from './db'
+import { db } from './../db'
 import { videos } from './db/schema'
 
 const api = new Hono()
