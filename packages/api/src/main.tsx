@@ -5,8 +5,14 @@ import { indexRoute } from './routes'
 import { rootRoute } from './layout'
 import { uploadRoute } from './routes/upload'
 import { videoRoute } from './routes/videos/[videoId]'
+import { videosRoute } from './routes/videos'
 
-const routeTree = rootRoute.addChildren([indexRoute, uploadRoute, videoRoute])
+const routeTree = rootRoute.addChildren([
+  indexRoute,
+  uploadRoute,
+  videoRoute,
+  videosRoute,
+])
 
 const router = createRouter({ routeTree })
 
