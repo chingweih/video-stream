@@ -15,4 +15,5 @@ serve({
   development: {
     hmr: true,
   },
+  maxRequestBodySize: 1024 * 1024 * 1024, // 1GB
 })
