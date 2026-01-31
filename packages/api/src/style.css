@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Roboto Slab Variable', 'Noto Sans TC Variable', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', monospace;
+
+  --color-background: #f1f1f1;
+}

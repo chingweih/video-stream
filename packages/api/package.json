@@ -4,12 +4,19 @@
     "dev": "bun run --hot index.ts"
   },
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/noto-sans-tc": "^5.2.10",
+    "@fontsource-variable/roboto-slab": "^5.2.8",
     "@hono/zod-validator": "^0.7.6",
+    "@tanstack/react-router": "^1.157.17",
+    "@tanstack/react-router-devtools": "^1.157.17",
     "@video-stream/shared": "workspace:*",
     "bullmq": "^5.67.2",
+    "bun-plugin-tailwind": "^0.1.2",
     "hono": "^4.11.7",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "tailwindcss": "^4.1.18",
     "uuid": "^13.0.0",
     "zod": "^4.3.6"
   },
