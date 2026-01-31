@@ -7,6 +7,8 @@ import type {
 } from '@video-stream/shared/contract'
 import { v7 as uuid } from 'uuid'
 import { s3 } from 'bun'
+import { zValidator } from '@hono/zod-validator'
+import { z } from 'zod/v4'
 
 const app = new Hono()
 
@@ -33,7 +35,20 @@ api.post('/videos', async (c) => {
   })
 })
 
-api.get('/videos/:videoId')
+api.get(
+  '/videos/:videoId',
+  zValidator(
+    'param',
+    z.object({
+      videoId: z.string(),
+    }),
+  ),
+  (c) => {
+    const { videoId } = c.req.valid('param')
+    const videoMasterM3U8 = s3.file(`/videos/${videoId}/master.m3u8`)
+    return new Response(videoMasterM3U8)
+  },
+)
 
 const fe = new Hono()
 
