@@ -4,9 +4,9 @@ A video transcoding and streaming project powered by Bun runtime and bundler ful
 
 ## Packages
 
-- `packages/api`: A Hono backend api with React frontend bundled by Bun.
-- `packages/shared`: Shared packages including Redis queue data contracts.
-- `packages/worker`: A Bun worker that takes in job data from Redis queue and using `ffmpeg` to transcode videos into streamable files.
+- **`packages/api`:** A Hono backend api with React frontend bundled by Bun.
+- **`packages/shared`:** Shared packages including Redis queue data contracts.
+- **`packages/worker`:** A Bun worker that takes in job data from Redis queue and using `ffmpeg` to transcode videos into streamable files.
 
 ## How it works?
 
